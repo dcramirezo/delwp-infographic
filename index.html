@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<title>Infographic</title>
+    	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+      <!--script src="js/imagesloaded.js"></script-->
+        <script src="js/skrollr.js"></script>
+        <!--script src="js/_main.js"></script-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   	</head>
+  	<body class="loading">
+    <div id="preload">
+          <img src="img/bcg_slide-1.jpg">
+          <img src="img/bcg_slide-2.jpg">
+          
+    </div>
+    <nav id="nav-wrapper">
+      <a href="#slide-1">* 1 *</a>
+      <a href="#slide-2">* 2 *</a>
+      <a href="#slide-3">* 3 *</a>
+      <a href="#slide-4">* 4 *</a>
+      <a href="#slide-5">* 5 *</a>
+      <a href="#slide-6">* 6 *</a>
+      <a href="#slide-7">* 7 *</a>
+      <a href="#slide-8">* 8 *</a>
+      
+      </nav>
+<div id="container">
+
+
+  <section id="slide-8">
+      <div class="bcg">
+          <div class="hsContainer">
+                <div class="hsContent">
+                      <h2>Simple parallax scrolling is. 8..</h2>
+                </div>
+          </div>
+      </div>
+  </section>
+  <section id="slide-7">
+<div class="bcg">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 7...</h2>
+                      </div>
+                  </div>
+              </div>
+  </section>
+  <section id="slide-6">
+<div class="bcg">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 6...</h2>
+                      </div>
+                  </div>
+              </div>
+  </section>
+  <section id="slide-5">
+<div class="bcg">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 5...</h2>
+                      </div>
+                  </div>
+              </div>
+  </section>
+  <section id="slide-4">
+<div class="bcg">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 4...</h2>
+                      </div>
+                  </div>
+              </div>
+  </section>
+  <section id="slide-3">
+<!--div class="bcg" data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% -100px;"
+        data-top-bottom="background-position: 50% 100px;"
+        data-anchor-target="#slide-4"-->
+        <div class="bcg">
+                  <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 3...</h2>
+                      </div>
+                  </div>
+              </div>
+  </section>
+  <section id="slide-2"> <!-- data-type="background" data-speed="10"> 
+      <div class="bcg" data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-anchor-target="#slide-3"-->
+        <div class="bcg">
+          <div class="hsContainer">
+                      <div class="hsContent">
+                          <h2>Simple parallax scrolling is 2...</h2>
+                      </div>
+          </div>
+      </div>
+  </section>
+  <section id="slide-1" > <!--data-type="background" data-speed="10">
+      <div class="bcg" data-center="background-position: 50% 100px;"
+        data-bottom-top="background-position: 50% 0px;"
+        data-anchor-target="#slide-2"-->
+        <div class="bcg">
+          <div class="hsContainer">
+              <div class="hsContent">
+                  <p>Helping whales, seals and dolphins in distress</p>
+              </div>
+              <div id="holder">
+              <div class="dot"></div>
+              <div class="pulse"></div>
+              
+              </div>
+              <div id="dolphin"></div>
+              <div id="whale"></div>
+              <div id="scuba-1"></div>
+              <div id="scuba-2"></div>
+          </div>
+      </div>
+  </section>
+</div>
+<script>
+		$(document).ready(function() {
+  // Handler for .ready() called.
+  $('html, body').animate({
+    scrollTop: $('#slide-1').offset().top
+  }, 'slow');
+
+ /* $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+    
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+            
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    }); */   
+});
+	</script>
+   	</body>
+</html>
