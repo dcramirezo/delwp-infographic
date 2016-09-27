@@ -46,12 +46,16 @@ nav a {
 	position: relative;
 	margin: 5px 10px;
 	text-decoration: none;
-	color: #ffff00;
+	color: #7f7f7f;
+	background-color: #cdcdcd;
+	padding: 2px 8px;
+	border-radius: 50%;
+	font-weight: bold;
 }
 
 nav a:hover {
 	text-decoration: none;
-	color: #ffffff;
+	color: #939393;
 }
 
 nav a.active {
@@ -126,7 +130,7 @@ section {
 	background-color: #f5f6f7;
 }
 #slide-7 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -135,7 +139,7 @@ section {
 	background-image: url('../img/bg-page-6.jpg');
 }
 #slide-6 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -144,7 +148,7 @@ section {
 	background-image: url('../img/bg-page-5.jpg');
 }
 #slide-5 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -153,7 +157,7 @@ section {
 	background-image: url('../img/bg-page-4.jpg');
 }
 #slide-4 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -162,7 +166,7 @@ section {
 	background-image: url('../img/bg-page-3.jpg');
 }
 #slide-3 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -176,7 +180,7 @@ section {
   position: relative; */
 }
 #slide-2 .hsContent {
-	margin-left: -450px;
+	margin-left: 450px;
 	bottom: 200px;
 	top: auto;
 }
@@ -313,102 +317,100 @@ border: 10px solid #fff601;
 }
 
 
+#scuba-1 {
+	background-image: url('../img/section-1/scuba-1.png');
+	position: absolute;
+	top: 300px;
+	right: 400px;
+	height: 59px;
+	width: 221px;
 
+	animation: swim 3s linear 1;
+}
+
+@keyframes swim{
+from{
+top: 100px;
+	right: -100px;
+	}
+	to {
+		top: 300px;
+	right: 400px;
+	}
+}
 
 #whale {
 	background-image: url('../img/section-1/whale.png');
 	position: absolute;
 	top: 300px;
-	left: 600px;
+	right: 450px;
 	height: 131px;
 	width: 317px;
-}
-#scuba-1 {
-	background-image: url('../img/section-1/scuba-1.png');
-	position: absolute;
-	top: 300px;
-	left: 700px;
-	height: 59px;
-	width: 221px;
+	-webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+	animation: salta 3s linear 1;
+  -moz-animation:salta 3s linear 1;
+   -webkit-animation: salta 3s linear 1;
 }
 
 #dolphin {
 	background-image: url('../img/section-1/dolphin.png');
 	position: absolute;
-	
+	top: 520px;
+	left: 100px;
 	height: 88px;
 	width: 200px;
-	-webkit-transform: rotate(-35deg);
-  -moz-transform: rotate(-35deg);
-  transform: rotate(-35deg);
-  animation: salta 5s linear infinite;
-  -moz-animation:salta 5s linear infinite;
-   -webkit-animation: salta 5s linear infinite;
 }
+
+#penguin-1 {
+	background-image: url('../img/section-1/penguin-1.png');
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 88px;
+	width: 200px;
+	
+  
+}
+
 
 @keyframes salta{
  
   0% {
     
-  /*-webkit-transform: rotate(-43deg);
-  -moz-transform: rotate(-43deg);
-  -ms-transform: rotate(-43deg);
-  -o-transform: rotate(-43deg);
-  transform: rotate(-43deg); */
-  top: 150px;
-	left: -150px;
-	 /*transform: translate(-150px, 250px);
--webkit-transform: translate(-150px, 250px);*/
-   }
-25% {
-    top:90px; 
-    left: 232px;
-  margin-top: 10px;
-  /*transform: translate(250px, -150px);
--webkit-transform: translate(250px, -150px);*/ }
+    top: 50px;
+	right: -150px;
+	} 
+
 	
   50% {
-   -webkit-transform: rotate(65deg);
-  -moz-transform: rotate(65deg);
-  -ms-transform: rotate(65deg);
-  -o-transform: rotate(65deg);
-  transform: rotate(65deg); 
-  /*-webkit-transform: rotate(33deg);
-  -moz-transform: rotate(33deg);
-  -ms-transform: rotate(33deg);
-  -o-transform: rotate(33deg);
-  transform: rotate(33deg); */
- left: 450px;
- top: 450px; 
+	   -webkit-transform: rotate(-65deg);
+	  -moz-transform: rotate(-65deg);
+	  -ms-transform: rotate(-65deg);
+	  -o-transform: rotate(-65deg);
+	  transform: rotate(-65deg); 
+	  
+ 
   }
 
-75% {
-   /* margin:132px 192px; left: 850px;
- top: 420px;*/
-  -webkit-transform: rotate(-23deg);
-  -moz-transform: rotate(-23deg);
-  -ms-transform: rotate(-23deg);
-  -o-transform: rotate(-23deg);
-  transform: rotate(0deg); 
-  
-}
-
   100% {
-    /*margin:330px 330px;*/
+    /*margin:330px 330px;
   -webkit-transform: rotate(23deg);
   -moz-transform: rotate(23deg);
   -ms-transform: rotate(23deg);
   -o-transform: rotate(23deg);
-  transform: rotate(23deg); 
-  left: 1200px;
-  top: 420px;
+  transform: rotate(23deg); */
+  right: 450px;
+  top: 300px;
 }
+
 }
 
 @-webkit-keyframes salta{
  
-  0% {
-     /*margin:15px 12px;*/
+ /* 0% {
+     margin:15px 12px;
   -webkit-transform: rotate(-43deg);
   -moz-transform: rotate(-43deg);
   -ms-transform: rotate(-43deg);
@@ -416,7 +418,7 @@ border: 10px solid #fff601;
   transform: rotate(-43deg); 
 	}
 25% {
-    /*margin:152px 152px;*/
+    /*margin:152px 152px;
   -webkit-transform: rotate(53deg);
   -moz-transform: rotate(53deg);
   -ms-transform: rotate(53deg);
@@ -426,7 +428,7 @@ transform: translate(50px, -150px);
 -webkit-transform: translate(50px, -150px);}
 	
   50% {
-    /*margin:152px 192px;*/
+    /*margin:152px 192px;
   -webkit-transform: rotate(-33deg);
   -moz-transform: rotate(-33deg);
   -ms-transform: rotate(-33deg);
@@ -442,7 +444,7 @@ transform: translate(50px, -150px);
   -ms-transform: rotate(53deg);
   -o-transform: rotate(53deg);
   transform: rotate(53deg); top: 500px;
-	left: 600px;}
+	left: 600px;}*/
 }
 
 
