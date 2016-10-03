@@ -7,7 +7,7 @@
     	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
       <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
       <!--script src="js/imagesloaded.js"></script-->
-        <script src="js/skrollr.js"></script>
+        
         <!--script src="js/_main.js"></script-->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
    	</head>
@@ -102,10 +102,8 @@
           </div>
       </div>
   </section>
-  <section id="slide-1" > <!--data-type="background" data-speed="10">
-      <div class="bcg" data-center="background-position: 50% 100px;"
-        data-bottom-top="background-position: 50% 0px;"
-        data-anchor-target="#slide-2"-->
+  
+  <section id="slide-1" style="height:1000px;"> 
         <div class="bcg">
           <div class="hsContainer">
               <div class="hsContent">
@@ -116,21 +114,28 @@
               <div class="pulse"></div>
               
               </div>
-              <div id="dolphin"></div>
-              <div id="whale"></div>
-              <div id="scuba-1"></div>
-              <div id="scuba-2"></div>
+              <div class="item" id="dolphin"><img src="img/section-1/dolphin.png"></div>
+              <div id="whale"><img src="img/section-1/whale.png"></div>
+              <div class="item" id="scuba-1" style="opacity: 0.2; top: 533px; transform: scale(0.5); right: -100px;"  data-250-bottom="opacity: 1; top: 446px; transform: scale(1); right: 600px;" data-center-top="opacity:0.2; top: 733px; right: 0px; transform: scale(0.5)"><img src="img/section-1/scuba-1.png"></div>
+              <div class="item" id="scuba-2" style="opacity: 0.2; bottom: 0px; transform: scale(0.5); left: 0px;"  data-250-bottom="opacity: 1; bottom: 346px; transform: scale(1); left: 500px;" data-bottom-bottom="opacity:0.2; bottom: 0px; left: 0px; transform: scale(0.5)"><img src="img/section-1/scuba-2.png"></div>
+              <div id="penguin-1"><img src="img/section-1/penguin-1.png"></div>
           </div>
+
       </div>
   </section>
 </div>
+<script src="js/skrollr.min.js"></script>
 <script>
-		$(document).ready(function() {
-  // Handler for .ready() called.
-  $('html, body').animate({
-    scrollTop: $('#slide-1').offset().top
-  }, 'slow');
 
+var s = skrollr.init();
+		$(document).ready(function() {
+
+     // var scrollvalue = $(element).offset().top - ( $(window).height() - $(element).height() );
+      //var scrollvalue = $('#slide-1').offset().top;
+  // Handler for .ready() called.
+  $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+
+  
  /* $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // assigning the object
     
