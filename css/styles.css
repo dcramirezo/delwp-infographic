@@ -184,7 +184,18 @@ section {
 	bottom: 200px;
 	top: auto;
 }
-
+#slide-15 .bcg{
+	
+	background: #a7cfdf; /* Old browsers */
+background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#slide-15 .hsContent {
+	left: 60%;
+	top: 25%;
+	bottom: auto;
+}
 #slide-1 .bcg{
 	
 	background-image: url('../img/bg-page-1.jpg'); 
@@ -318,14 +329,14 @@ border: 10px solid #fff601;
 
 
 #scuba-1 {
-	background-image: url('../img/section-1/scuba-1.png');
-	position: absolute;
-	top: 48%;
-	right: 42%;
+	
+	
+	top: 446px;
+	right: 600px;
 	height: 59px;
 	width: 221px;
-
-	animation: swim-r 3s linear 1;
+left: auto;
+	/*animation: swim-r 3s linear 1;*/
 }
 
 @keyframes swim-r{
@@ -340,14 +351,13 @@ top: 100px;
 }
 
 #scuba-2 {
-	background-image: url('../img/section-1/scuba-2.png');
-	position: absolute;
-	top: 69%;
-	left: 10%;
+
+	bottom: 446px;
+	left: 420px;
 	height: 81px;
 	width: 196px;
-
-	animation: swim-l 3s linear 1;
+    top: auto;
+	/*animation: swim-l 3s linear 1;*/
 } 
 
 @keyframes swim-l{
@@ -370,10 +380,10 @@ top: 100px;
 }
 
 #whale {
-	background-image: url('../img/section-1/whale.png');
+	
 	position: absolute;
-	top: 46%;
-	right: 40%;
+	top: 460px;
+	right: 400px;
 	height: 131px;
 	width: 317px;
 	-webkit-transform: rotate(-35deg);
@@ -384,19 +394,22 @@ top: 100px;
    -webkit-animation: salta 3s linear 1;
 }
 
-#dolphin {
-	background-image: url('../img/section-1/dolphin.png');
+.item {
 	position: absolute;
-	
-	left: 5%;
-	bottom: 0px;
+	top: 0;
+	left: 0;
+}
+
+#dolphin {
 	height: 88px;
 	width: 200px;
+	top: auto;
+	bottom: 146px;
+	left: 100px;
 }
 
 #penguin-1 {
-	background-image: url('../img/section-1/penguin-1.png');
-	position: absolute;
+	
 	top: 100px;
 	left: 100px;
 	height: 120px;
@@ -433,7 +446,7 @@ top: 100px;
   -o-transform: rotate(23deg);
   transform: rotate(23deg); */
   right: 450px;
-  top: 300px;
+  top: 460px;
 }
 
 }
