@@ -11,27 +11,27 @@
         <!--script src="js/_main.js"></script-->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
    	</head>
-  	<body class="loading">
-    <div id="preload">
+  	<body>
+    <!--div id="preload">
           <img src="img/bcg_slide-1.jpg">
           <img src="img/bcg_slide-2.jpg">
           
-    </div>
+    </div-->
     <nav id="nav-wrapper">
-      <a href="#slide-1"> 1 </a>
-      <a href="#slide-2"> 2 </a>
-      <a href="#slide-3"> 3 </a>
-      <a href="#slide-4"> 4 </a>
-      <a href="#slide-5"> 5 </a>
-      <a href="#slide-6"> 6 </a>
-      <a href="#slide-7"> 7 </a>
-      <a href="#slide-8"> 8 </a>
+      <a href="#slide-8"> Mountains </a>
+      <a href="#slide-7"> Foothills </a>
+      <a href="#slide-6"> Regional </a>
+      <a href="#slide-5"> Outer city </a>
+      <a href="#slide-4"> Inner city </a>
+      <a href="#slide-3"> City </a>
+      <a href="#slide-2"> Foreshore </a>
+      <a href="#slide-1"> Sea/Bay </a>
       
       </nav>
 <div id="container">
 
 
-  <section id="slide-8">
+  <!--section id="slide-8">
       <div class="bcg">
           <div class="hsContainer">
                 <div class="hsContent">
@@ -77,10 +77,10 @@
               </div>
   </section>
   <section id="slide-3">
-<!--div class="bcg" data-center="background-position: 50% 0px;"
+<div class="bcg" data-center="background-position: 50% 0px;"
         data-bottom-top="background-position: 50% -100px;"
         data-top-bottom="background-position: 50% 100px;"
-        data-anchor-target="#slide-4"-->
+        data-anchor-target="#slide-4">
         <div class="bcg">
                   <div class="hsContainer">
                       <div class="hsContent">
@@ -88,40 +88,45 @@
                       </div>
                   </div>
               </div>
-  </section>
-  <section id="slide-2"> <!-- data-type="background" data-speed="10"> 
+  </section-->
+  <section id="slide-2" style="height:5243px;"> <!-- data-type="background" data-speed="10"> 
       <div class="bcg" data-center="background-position: 50% 0px;"
         data-top-bottom="background-position: 50% -100px;"
         data-bottom-top="background-position: 50% 100px;"
         data-anchor-target="#slide-3"-->
-        <div class="bcg">
-          <div class="hsContainer">
+        <div class="bcg"> </div>
+          
+      
+      <div class="hsContainer">
                       <div class="hsContent">
                           <h2>Simple parallax scrolling is 2...</h2>
                       </div>
           </div>
-      </div>
   </section>
   
-  <section id="slide-1" style="height:1000px;"> 
-        <div class="bcg">
-          <div class="hsContainer">
+  <section id="slide-1" style="height:5339px"> 
+        <div class="bcg"></div>
+          
+
+      
+      <div class="hsContainer"> </div>
               <div class="hsContent">
                   <p>Helping whales, seals and dolphins in distress</p>
               </div>
-              <div id="holder">
-              <div class="dot"></div>
-              <div class="pulse"></div>
               
+              
+             
+              <div id="holder" style="opacity: 0.2; transform: scale(0.5); top: 10505px;" data-bottom="opacity:0;"  data-10500-bottom="opacity: 1; top: 10500px; transform: scale(0.5);" data-10100-bottom="opacity: 1; top: 10005px; transform: scale(0.45);" data-9100-bottom="opacity: 1; top: 9995px; transform: scale(1);">
+                <div class="dot"></div>
+                <div class="pulse"></div>
               </div>
-              <div class="item" id="dolphin"><img src="img/section-1/dolphin.png"></div>
+              <!--div class="item" id="dolphin"><img src="img/section-1/dolphin.png" ></div-->
               <div id="whale"><img src="img/section-1/whale.png"></div>
-              <div class="item" id="scuba-1" style="opacity: 0.2; top: 533px; transform: scale(0.5); right: -100px;"  data-250-bottom="opacity: 1; top: 446px; transform: scale(1); right: 600px;" data-center-top="opacity:0.2; top: 733px; right: 0px; transform: scale(0.5)"><img src="img/section-1/scuba-1.png"></div>
-              <div class="item" id="scuba-2" style="opacity: 0.2; bottom: 0px; transform: scale(0.5); left: 0px;"  data-250-bottom="opacity: 1; bottom: 346px; transform: scale(1); left: 500px;" data-bottom-bottom="opacity:0.2; bottom: 0px; left: 0px; transform: scale(0.5)"><img src="img/section-1/scuba-2.png"></div>
-              <div id="penguin-1"><img src="img/section-1/penguin-1.png"></div>
-          </div>
+              <div class="item" id="scuba-1" style="opacity: 0.2; top: 10360px; transform: scale(0.5); right: 0%;" data-150-bottom="opacity:1; top: 10120px; right: 15%; transform: scale(1)"  data-bottom-bottom="opacity: 0.2; top: 10520px; transform: scale(0.5); right: 0px;" data-anchor-target="#whale"><img src="img/section-1/scuba-1.png"></div>
+              <div class="item" id="scuba-2" style="opacity: 0.2; top: 10505px; transform: scale(0.5); left: 0%;"  data-150-bottom="opacity: 1; top: 9995px; transform: scale(1); left: 30%;" data-bottom-bottom="opacity:0.2; top: 10505px; left: -20%; transform: scale(0.5)"><img src="img/section-1/scuba-2.png"></div>
+              <!--div class="item" id="penguin-1"><img src="img/section-1/penguin-1.png"></div-->
 
-      </div>
+              
   </section>
 </div>
 <script src="js/skrollr.min.js"></script>
